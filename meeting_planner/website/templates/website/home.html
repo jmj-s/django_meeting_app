@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Welcome to the Meeting Planner App!</h1>
+        <p>
+            This is a demo app
+        </p>
+        <p>
+            Number of Meetings: {{num_meetings}}
+        </p>
+        <p>
+            Number of Rooms: {{num_rooms}}
+        </p>
+        <p>
+            Meetings: 
+            <ul>
+                {% for m in meetings %}
+                    <li>
+                        <a href="{% url 'meeting_details' m.id  %}">
+                            {{m.title}}
+                        </a>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </p>
+    </body>
+</html>

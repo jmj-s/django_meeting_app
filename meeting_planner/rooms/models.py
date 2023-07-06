@@ -10,5 +10,5 @@ class Room(models.Model):
     room_number = models.IntegerField(default=1)
 
     def __str__(self):
-        return f"{self.name} - {self.floor} - {self.room_number}"
+        return f"{self.name}, Floor: {self.floor}, Room #: {self.room_number}"
     
