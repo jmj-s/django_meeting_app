@@ -13,7 +13,10 @@
             Number of Meetings: {{num_meetings}}
         </p>
         <p>
-            Number of Rooms: {{num_rooms}}
+            Number of Rooms: <a href="{% url 'all_rooms' %}">
+                                   {{num_rooms}}
+                             </a>
+                                
         </p>
         <p>
             Meetings: 
