@@ -27,7 +27,7 @@ urlpatterns = [
     path('about', about),
 
     path('meetings/', include('meetings.urls')),
-    path('rooms', include('rooms.urls'))
+    path('rooms/', include('rooms.urls'))
 
     
 ]

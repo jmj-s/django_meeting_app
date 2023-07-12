@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Home</title>
-    </head>
-    <body>
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{%  block content %}
         <h1>Welcome to the Meeting Planner App!</h1>
-        <p>
-            This is a demo app
-        </p>
+        <button>
+            <a href="{% url 'new_meeting' %}">
+                Add Meeting 
+            </a>
+        </button>
         <p>
             Number of Meetings: {{num_meetings}}
         </p>
@@ -31,5 +31,4 @@
 
             </ul>
         </p>
-    </body>
-</html>
+{% endblock %}
